@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+}
+
+.button {
+    position: relative;
+    text-align: center;
+    width: 180px;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    /* color: antiquewhite; */
+    border: 2px solid aqua;
+    border-radius: 5px;
+    background-color: aqua;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: aquamarine; 
+}
+
+.Font {
+    font-family: "Sofia",sans-serif;
+}
+.text {
+    font-family: "Sofia",sans-serif;
+}
+
+
+.box {
+   background-color: yellowgreen;
+   width: 80px;
+   margin: 20px auto;
+   height: 80px;
+   transition: width 2s;
+   margin-left: 10px;
+}
+
+.box:hover {
+    width: 200px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    margin-left: 50px;
+}
+
+.media {
+    background-color: pink;
+}
+ @media screen and (min-width:480px){
+    .media {
+        background-color: lightgreen;
+    }
+ }
+
+.Animation {
+       width: 100px;
+       height: 100px;
+       background-color: red;
+       animation-name: myAnimation;
+       animation-duration: 4s;
+       animation-iteration-count: infinite;
+       margin-left: 50px;
+}
+@keyframes myAnimation {
+    0% {background-color: red;}
+    25% {background-color: yellow;}
+    50% {background-color: blue;}
+    100% {background-color: green;}
+}
